@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurelia — Glow Naturally</title>
+  <meta name="description" content="Thoughtfully crafted skincare essentials designed to nourish your skin and elevate your everyday routine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">AURELIA</a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+        <a href="#cta-section" class="btn btn-primary nav-cta-mobile">Discover</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-switch" id="themeToggle" aria-label="Toggle Dark/Light Mode" role="switch" aria-checked="false">
+          <span class="switch-track">
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+
+        <a href="#cta-section" class="btn btn-primary nav-cta">Discover</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-blob shape-1"></div>
+      <div class="hero-bg-blob shape-2"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <span class="tagline-badge">PURE SKINCARE • PURE CONFIDENCE</span>
+          <h1 class="hero-title">Glow Naturally.<br /><em>Feel Confident.</em></h1>
+          <p class="hero-description">
+            Thoughtfully crafted skincare essentials designed to nourish your skin and elevate your everyday routine.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Collection</a>
+            <a href="#about" class="btn btn-secondary">Our Story</a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1000&auto=format&fit=crop" alt="Aurelia Premium Serum Bottle in modern neutral setting" class="hero-img float-animation" />
+            <div class="badge-card float-badge">
+              <span class="badge-number">98%</span>
+              <span class="badge-text">Customer Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Mindful Ingredients</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-value">98%</span>
+            <span class="stat-label">Customer Satisfaction</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-value">24H</span>
+            <span class="stat-label">Hydration</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-value">Cruelty Free</span>
+            <span class="stat-label">Always</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-media reveal">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1000&auto=format&fit=crop" alt="Woman applying Aurelia skincare gently" class="about-img" />
+            <div class="decorative-circle"></div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-subtitle">THE AURELIA PHILOSOPHY</span>
+          <h2 class="section-title">Simple skincare.<br />Thoughtfully made.</h2>
+          <div class="gold-divider"></div>
+          <p class="about-text">
+            At Aurelia, we believe that true beauty thrives in simplicity. Our formulas are intentionally created with gentle, high-performance botanicals that respect your skin's natural barrier.
+          </p>
+          <p class="about-text">
+            We reject complex, overwhelming routines in favor of minimal, essential steps designed to bring out your healthiest, most radiant complexion effortless every single day.
+          </p>
+          <a href="#benefits" class="text-link">Discover Our Philosophy <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-subtitle">THE ESSENTIALS</span>
+          <h2 class="section-title">Your Everyday Essentials</h2>
+          <p class="section-description">Simple formulas. Beautiful results.</p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-image-box">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" alt="Hydra Glow Serum" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Hydra Glow Serum</h3>
+              <p class="product-desc">Deep hydration & natural radiance</p>
+              <div class="product-footer">
+                <span class="product-price">$32</span>
+                <button class="btn btn-outline modal-trigger" 
+                        data-title="Hydra Glow Serum" 
+                        data-price="$32" 
+                        data-img="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop" 
+                        data-desc="Deep hydration & natural radiance. Formulated with low and high molecular hyaluronic acids to penetrate multiple layers of the skin, offering immediate plumpness and long-lasting moisture balance.">
+                  Discover
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-image-box">
+              <img src="https://www.keunepakistan.com/cdn/shop/files/Keune-Style-Relaunch-Velvet-Cloud-Packshot-Old-VS-New_a8150dff-034b-4a5f-8f8d-f7a3d0a8653c.jpg?v=1748849226&width=1080" alt="Velvet Cloud Moisturizer" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Velvet Cloud Moisturizer</h3>
+              <p class="product-desc">Lightweight moisture for soft skin</p>
+              <div class="product-footer">
+                <span class="product-price">$28</span>
+                <button class="btn btn-outline modal-trigger" 
+                        data-title="Velvet Cloud Moisturizer" 
+                        data-price="$28" 
+                        data-img="https://images.unsplash.com/photo-1608248597560-8013f283832c?q=80&w=800&auto=format&fit=crop" 
+                        data-desc="Lightweight moisture for ultra-soft, supple skin. Infused with squalane and soothing botanical extracts, this whipped cream locks in hydration without feeling heavy or greasy.">
+                  Discover
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-image-box">
+              <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=800&auto=format&fit=crop" alt="Lumière Face Oil" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lumière Face Oil</h3>
+              <p class="product-desc">Nourishing oils for a healthy glow</p>
+              <div class="product-footer">
+                <span class="product-price">$36</span>
+                <button class="btn btn-outline modal-trigger" 
+                        data-title="Lumière Face Oil" 
+                        data-price="$36" 
+                        data-img="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=800&auto=format&fit=crop" 
+                        data-desc="Nourishing golden oils for a healthy, luminous glow. A delicate blend of cold-pressed Jojoba, Rosehip, and Vitamin E that repairs the lipid barrier while protecting against daily environmental stressors.">
+                  Discover
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits-section" id="benefits">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-subtitle">THE BENEFITS</span>
+          <h2 class="section-title">Skincare, Simplified.</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="benefit-title">Gentle Formulas</h3>
+            <p class="benefit-desc">Designed meticulously with skin-friendly ingredients that respect sensitive skin types.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h3 class="benefit-title">Deep Hydration</h3>
+            <p class="benefit-desc">Helps maintain smooth, soft, and continuously hydrated-looking skin all day long.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+            </div>
+            <h3 class="benefit-title">Mindful Ingredients</h3>
+            <p class="benefit-desc">Thoughtfully selected clean ingredients with a conscious, simple, and clean approach.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <h3 class="benefit-title">Cruelty Free</h3>
+            <p class="benefit-desc">Beauty without compromise. Never tested on animals, crafted with love.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ingredients-section">
+      <div class="container ingredients-container">
+        <div class="ingredients-content reveal">
+          <span class="section-subtitle">PURE & EFFECTIVE</span>
+          <h2 class="section-title">Powered by<br />Thoughtful Ingredients</h2>
+
+          <div class="ingredients-list">
+            <div class="ingredient-item">
+              <span class="ingredient-pill">01</span>
+              <div>
+                <h3 class="ingredient-name">Hyaluronic Acid</h3>
+                <p class="ingredient-desc">For a deeply hydrated, plump-looking complexion that holds moisture all day.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-pill">02</span>
+              <div>
+                <h3 class="ingredient-name">Vitamin C</h3>
+                <p class="ingredient-desc">Powerful antioxidant protection for a brighter and more radiant appearance.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <span class="ingredient-pill">03</span>
+              <div>
+                <h3 class="ingredient-name">Jojoba Oil</h3>
+                <p class="ingredient-desc">Biomimetic botanical oil for deeply nourishing and softening delicate skin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ingredients-media reveal">
+          <div class="ingredients-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=900&auto=format&fit=crop" alt="Pure botanical oils and skincare ingredients" class="ingredients-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="routine-section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-subtitle">EASY APPLICATION</span>
+          <h2 class="section-title">Your 3-Step Ritual</h2>
+        </div>
+
+        <div class="routine-timeline">
+          <div class="timeline-line"></div>
+
+          <div class="routine-step reveal">
+            <div class="step-number">01</div>
+            <div class="step-card">
+              <h3 class="step-title">Cleanse</h3>
+              <p class="step-desc">Start with a fresh, clean canvas by gently washing away daily impurities without stripping moisture.</p>
+            </div>
+          </div>
+
+          <div class="routine-step reveal">
+            <div class="step-number">02</div>
+            <div class="step-card">
+              <h3 class="step-title">Treat</h3>
+              <p class="step-desc">Apply 2–3 drops of your targeted serum to penetrate deeply and address skin's specific needs.</p>
+            </div>
+          </div>
+
+          <div class="routine-step reveal">
+            <div class="step-number">03</div>
+            <div class="step-card">
+              <h3 class="step-title">Moisturize</h3>
+              <p class="step-desc">Lock in essential hydration and nourish skin barriers to finish your elevated daily ritual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-subtitle">TESTIMONIALS</span>
+          <h2 class="section-title">Loved by Skin, Loved by You.</h2>
+        </div>
+
+        <div class="testimonial-slider-wrapper reveal">
+          <div class="testimonial-slider" id="testimonialSlider">
+            <div class="testimonial-card active">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">“Aurelia made my skincare routine feel simple and enjoyable. My skin has never looked so naturally clear and radiant.”</p>
+              <span class="testimonial-author">— Emma R.</span>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">“The moisturizer feels incredibly lightweight and leaves my skin feeling comfortable and hydrated all day long.”</p>
+              <span class="testimonial-author">— Sophia M.</span>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">“Beautiful products, beautiful packaging, and a beautifully simple routine. My skin is glowing!”</p>
+              <span class="testimonial-author">— Olivia K.</span>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="prevReview" aria-label="Previous review">&#8592;</button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn next-btn" id="nextReview" aria-label="Next review">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section" id="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 class="cta-title">Your Skin Deserves a Little More Love.</h2>
+          <p class="cta-description">Discover a simpler approach to skincare and find your everyday glow.</p>
+
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <div class="input-group">
+              <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email address" aria-label="Email Address" required />
+              <button type="submit" class="btn btn-primary">Join Us</button>
+            </div>
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">AURELIA</a>
+          <p class="footer-text">Thoughtful skincare for your everyday ritual.</p>
+        </div>
+
+        <div class="footer-links-column">
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-list">
+            <li><a href="#cta-section">Contact</a></li>
+            <li><a href="#cta-section">FAQs</a></li>
+            <li><a href="#cta-section">Shipping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h4 class="footer-heading">Follow</h4>
+          <ul class="footer-list">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aurelia. All rights reserved.</p>
+        <p class="footer-tagline">Made with intention.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-img-container">
+          <img src="" id="modalImg" alt="Product Detail" />
+        </div>
+        <div class="modal-details">
+          <h3 id="modalTitle" class="modal-title">Product Name</h3>
+          <span id="modalPrice" class="modal-price">$0.00</span>
+          <p id="modalDesc" class="modal-desc">Product description will appear here.</p>
+          <a href="#cta-section" class="btn btn-primary modal-cta" id="modalCta">Get Yours</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
